@@ -7,4 +7,7 @@ target 'proje' do
 
   # Pods for proje
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'SVProgressHUD'
 end
