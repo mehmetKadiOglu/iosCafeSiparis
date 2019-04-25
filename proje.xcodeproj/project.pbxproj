@@ -26,6 +26,7 @@
 		BB48B8D622650E38009BE390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB48B8D422650E38009BE390 /* LaunchScreen.storyboard */; };
 		BB48B8DE22650EA2009BE390 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB48B8DD22650EA2009BE390 /* GoogleService-Info.plist */; };
 		BB5379B42269CA3A00D5585F /* Kullanici.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5379B32269CA3A00D5585F /* Kullanici.swift */; };
+		BB66CA7F2271C6CA002A2577 /* MenuTableCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB66CA7E2271C6CA002A2577 /* MenuTableCellViewController.swift */; };
 		BB6839BD2267D69B009ECE4B /* MusteriGirisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6839BC2267D69B009ECE4B /* MusteriGirisViewController.swift */; };
 		BB6839BF2267D736009ECE4B /* AdminCafeYonetimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6839BE2267D736009ECE4B /* AdminCafeYonetimViewController.swift */; };
 		BB6839C12267D793009ECE4B /* MasalarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6839C02267D793009ECE4B /* MasalarViewController.swift */; };
@@ -78,6 +79,7 @@
 		BB48B8D722650E38009BE390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB48B8DD22650EA2009BE390 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BB5379B32269CA3A00D5585F /* Kullanici.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kullanici.swift; sourceTree = "<group>"; };
+		BB66CA7E2271C6CA002A2577 /* MenuTableCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableCellViewController.swift; sourceTree = "<group>"; };
 		BB6839BC2267D69B009ECE4B /* MusteriGirisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusteriGirisViewController.swift; sourceTree = "<group>"; };
 		BB6839BE2267D736009ECE4B /* AdminCafeYonetimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminCafeYonetimViewController.swift; sourceTree = "<group>"; };
 		BB6839C02267D793009ECE4B /* MasalarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasalarViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				BBA684DA226B98D600FDAD45 /* TableViewCellViewController.swift */,
 				BB185E30226CED5900CD54CB /* MuziklerTableViewCellViewController.swift */,
 				BB185E34226CF3F900CD54CB /* GlobalNesne.swift */,
+				BB66CA7E2271C6CA002A2577 /* MenuTableCellViewController.swift */,
 			);
 			path = Ekler;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				BBEF52D8226B5AD30023E18C /* FirebaseAddTable.swift in Sources */,
 				BBEF52CF226B488F0023E18C /* LoginInterface.swift in Sources */,
 				BBEF52CA226B47D10023E18C /* Admin.swift in Sources */,
+				BB66CA7F2271C6CA002A2577 /* MenuTableCellViewController.swift in Sources */,
 				BBEF52CD226B48770023E18C /* AdminLogin.swift in Sources */,
 				BB1A3962226B1D92000E5F03 /* Musteri.swift in Sources */,
 				BB185E35226CF3F900CD54CB /* GlobalNesne.swift in Sources */,
