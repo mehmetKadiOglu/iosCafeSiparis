@@ -92,25 +92,32 @@ class ViewController: UIViewController {
                 
              }
              DispatchQueue.main.async {
-                while(true){
-                    if(FirebaseBoolean.MenuDataKontrol){
-                        sleep(1)
-                    }else{
-                        SVProgressHUD.dismiss()
-                        if(!FirebaseBoolean.LoginBasariKontrol){
-                            Toast.make(mesaj: "Kullanici Adi Veya Şifre Hatalı")
-                        }
-                        else{
-                            self.adminSayfaGecis()
-                        }
-                        break
-                    }
+                if(FirebaseBoolean.LoginBasariKontrol){
+                    self.menuKontrol()
+                }
+                else{
+                    SVProgressHUD.dismiss()
+                    Toast.make(mesaj: "Kullanici Adi Veya Şifre Hatalı")
                 }
              }
          
         }
         
         
+    }
+    func menuKontrol(){
+        
+        DispatchQueue.global(qos: .userInitiated).async {
+            while(FirebaseBoolean.MenuDataKontrol){
+                sleep(1)
+            }
+            
+            DispatchQueue.main.async{
+                SVProgressHUD.dismiss()
+                self.adminSayfaGecis()
+            }
+        }
+
     }
     
     @IBAction func kullaniciKayit(_ sender: Any) {

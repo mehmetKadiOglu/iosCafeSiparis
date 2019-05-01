@@ -204,7 +204,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="p7g-mZ-ZzH" kind="show" id="vrO-az-3WL"/>
+                                    <segue destination="e3q-eY-ok2" kind="show" id="aap-sO-Erm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gv2-uU-ihY" customClass="RoundButton" customModule="proje" customModuleProvider="target">
@@ -586,18 +586,129 @@
         <!--Menu&Grup Ekle-->
         <scene sceneID="0u9-jq-YEg">
             <objects>
-                <viewController id="p82-NI-rv4" sceneMemberID="viewController">
+                <viewController id="p82-NI-rv4" customClass="MenuEkleViewController" customModule="proje" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oFc-gd-YTn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="2lb-Rv-35Q">
+                                <rect key="frame" x="16" y="252" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="dj3-CX-bgd"/>
+                                    <constraint firstAttribute="height" constant="30" id="xW3-Gs-m6q"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="NXp-Vs-rtD">
+                                <rect key="frame" x="127" y="383" width="120" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2d-jg-qeK" customClass="RoundButton" customModule="proje" customModuleProvider="target">
+                                <rect key="frame" x="127" y="470" width="120" height="42"/>
+                                <color key="backgroundColor" red="0.85882352939999995" green="0.1058823529" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="04h-FW-4kC"/>
+                                    <constraint firstAttribute="height" constant="42" id="uBw-ea-vZN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Ekle">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.85882352939999995" green="0.1058823529" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ekleClick:" destination="p82-NI-rv4" eventType="touchUpInside" id="r0z-GY-RUG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QYP-8Q-KYM" customClass="RoundButton" customModule="proje" customModuleProvider="target">
+                                <rect key="frame" x="16" y="542" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.85882352939999995" green="0.1058823529" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Akq-W5-Bi0"/>
+                                    <constraint firstAttribute="height" constant="50" id="UoL-Zr-tlm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="O4t-vE-U9R" kind="show" id="Py9-qZ-o3T"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ocn-na-3bl">
+                                <rect key="frame" x="16" y="52" width="343" height="162"/>
+                                <color key="backgroundColor" red="0.85882352939999995" green="0.1058823529" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="AKf-ao-3jn"/>
+                                    <constraint firstAttribute="height" constant="162" id="zaJ-1E-czk"/>
+                                </constraints>
+                            </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="nUu-FD-ePS">
+                                <rect key="frame" x="16" y="318" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="bmB-PG-sta"/>
+                                    <constraint firstAttribute="height" constant="30" id="hTp-Xq-oe6"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="0.08235294118" green="0.08235294118" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2lb-Rv-35Q" firstAttribute="top" secondItem="Ocn-na-3bl" secondAttribute="bottom" constant="38" id="0KJ-RV-nSp"/>
+                            <constraint firstItem="R2d-jg-qeK" firstAttribute="top" secondItem="NXp-Vs-rtD" secondAttribute="bottom" constant="57" id="0sU-9O-msq"/>
+                            <constraint firstItem="QYP-8Q-KYM" firstAttribute="leading" secondItem="CIS-T8-qJs" secondAttribute="leading" constant="16" id="1df-Za-55J"/>
+                            <constraint firstItem="CIS-T8-qJs" firstAttribute="trailing" secondItem="R2d-jg-qeK" secondAttribute="trailing" constant="128" id="9ed-6X-aCA"/>
+                            <constraint firstItem="2lb-Rv-35Q" firstAttribute="leading" secondItem="CIS-T8-qJs" secondAttribute="leading" constant="16" id="B3Q-8v-in5"/>
+                            <constraint firstItem="R2d-jg-qeK" firstAttribute="top" secondItem="NXp-Vs-rtD" secondAttribute="bottom" constant="57" id="BXs-5I-iUw"/>
+                            <constraint firstItem="Ocn-na-3bl" firstAttribute="top" secondItem="CIS-T8-qJs" secondAttribute="top" constant="32" id="CtM-Ln-JJH"/>
+                            <constraint firstItem="CIS-T8-qJs" firstAttribute="bottom" secondItem="QYP-8Q-KYM" secondAttribute="bottom" constant="26" id="EUE-dZ-WGC"/>
+                            <constraint firstItem="NXp-Vs-rtD" firstAttribute="top" secondItem="nUu-FD-ePS" secondAttribute="bottom" constant="35" id="EaO-iR-qQs"/>
+                            <constraint firstItem="R2d-jg-qeK" firstAttribute="leading" secondItem="CIS-T8-qJs" secondAttribute="leading" constant="127" id="H3u-8H-Q0J"/>
+                            <constraint firstItem="Ocn-na-3bl" firstAttribute="leading" secondItem="CIS-T8-qJs" secondAttribute="leading" constant="16" id="Hxd-fw-CMA"/>
+                            <constraint firstItem="QYP-8Q-KYM" firstAttribute="top" secondItem="nUu-FD-ePS" secondAttribute="bottom" constant="194" id="Kmg-rR-O1r"/>
+                            <constraint firstItem="CIS-T8-qJs" firstAttribute="trailing" secondItem="nUu-FD-ePS" secondAttribute="trailing" constant="16" id="Ojb-Vg-z2y"/>
+                            <constraint firstItem="CIS-T8-qJs" firstAttribute="trailing" secondItem="Ocn-na-3bl" secondAttribute="trailing" constant="16" id="Zm5-iE-nXV"/>
+                            <constraint firstItem="NXp-Vs-rtD" firstAttribute="leading" secondItem="CIS-T8-qJs" secondAttribute="leading" constant="127" id="aH6-cU-Kl1"/>
+                            <constraint firstItem="nUu-FD-ePS" firstAttribute="top" secondItem="2lb-Rv-35Q" secondAttribute="bottom" constant="36" id="cU7-Qh-Qxe"/>
+                            <constraint firstItem="nUu-FD-ePS" firstAttribute="leading" secondItem="CIS-T8-qJs" secondAttribute="leading" constant="16" id="dm5-CH-yui"/>
+                            <constraint firstItem="nUu-FD-ePS" firstAttribute="top" secondItem="2lb-Rv-35Q" secondAttribute="bottom" constant="36" id="drH-uj-Sbj"/>
+                            <constraint firstItem="NXp-Vs-rtD" firstAttribute="top" secondItem="nUu-FD-ePS" secondAttribute="bottom" constant="35" id="fFY-Kp-Awp"/>
+                            <constraint firstItem="2lb-Rv-35Q" firstAttribute="top" secondItem="Ocn-na-3bl" secondAttribute="bottom" constant="38" id="fHZ-Xi-Ase"/>
+                            <constraint firstItem="CIS-T8-qJs" firstAttribute="trailing" secondItem="QYP-8Q-KYM" secondAttribute="trailing" constant="309" id="l8a-6H-SyD"/>
+                            <constraint firstItem="CIS-T8-qJs" firstAttribute="bottom" secondItem="R2d-jg-qeK" secondAttribute="bottom" constant="106" id="lz4-lt-rSl"/>
+                            <constraint firstItem="CIS-T8-qJs" firstAttribute="trailing" secondItem="2lb-Rv-35Q" secondAttribute="trailing" constant="16" id="uyz-x1-dog"/>
+                            <constraint firstItem="CIS-T8-qJs" firstAttribute="trailing" secondItem="NXp-Vs-rtD" secondAttribute="trailing" constant="128" id="yAo-uw-v8N"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="CIS-T8-qJs"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Menu&amp;Grup Ekle" id="kDh-eR-Y2t"/>
+                    <connections>
+                        <outlet property="menuFiyat" destination="NXp-Vs-rtD" id="abz-wp-xrE"/>
+                        <outlet property="menuIcerik" destination="nUu-FD-ePS" id="nxw-5S-Y21"/>
+                        <outlet property="menuKatagori" destination="2lb-Rv-35Q" id="gxs-T2-VJl"/>
+                        <outlet property="pickerView" destination="Ocn-na-3bl" id="dtx-Pc-nUH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ixV-pL-anH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4558" y="694"/>
+            <point key="canvasLocation" x="4904.8000000000002" y="725.48725637181417"/>
         </scene>
         <!--Masalar View Controller-->
         <scene sceneID="780-0F-EKH">
@@ -861,6 +972,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="e3q-eY-ok2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d6E-eu-1Fh">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -881,7 +993,6 @@
         <image name="table" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="osE-fC-OUP"/>
-        <segue reference="K65-Eb-dOi"/>
+        <segue reference="Py9-qZ-o3T"/>
     </inferredMetricsTieBreakers>
 </document>

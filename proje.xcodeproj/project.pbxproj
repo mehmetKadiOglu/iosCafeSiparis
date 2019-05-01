@@ -33,6 +33,8 @@
 		BB6839C32267D7CA009ECE4B /* MuziklerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6839C22267D7CA009ECE4B /* MuziklerViewController.swift */; };
 		BB6839C52267D7FD009ECE4B /* SiparislerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6839C42267D7FD009ECE4B /* SiparislerViewController.swift */; };
 		BB6839C72267D832009ECE4B /* MenuYonetimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6839C62267D832009ECE4B /* MenuYonetimViewController.swift */; };
+		BB8956F022799FAB00C8A04E /* MenuEkleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8956EF22799FAB00C8A04E /* MenuEkleViewController.swift */; };
+		BB8956F22279A39900C8A04E /* FirebaseAddMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8956F12279A39900C8A04E /* FirebaseAddMenu.swift */; };
 		BB93CC5E226911E300991A15 /* FirebaseBoolean.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93CC5D226911E300991A15 /* FirebaseBoolean.swift */; };
 		BB93CC61226918F100991A15 /* FirebaseAddData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93CC60226918F100991A15 /* FirebaseAddData.swift */; };
 		BBA684DB226B98D600FDAD45 /* TableViewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA684DA226B98D600FDAD45 /* TableViewCellViewController.swift */; };
@@ -86,6 +88,8 @@
 		BB6839C22267D7CA009ECE4B /* MuziklerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuziklerViewController.swift; sourceTree = "<group>"; };
 		BB6839C42267D7FD009ECE4B /* SiparislerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiparislerViewController.swift; sourceTree = "<group>"; };
 		BB6839C62267D832009ECE4B /* MenuYonetimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuYonetimViewController.swift; sourceTree = "<group>"; };
+		BB8956EF22799FAB00C8A04E /* MenuEkleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuEkleViewController.swift; sourceTree = "<group>"; };
+		BB8956F12279A39900C8A04E /* FirebaseAddMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAddMenu.swift; sourceTree = "<group>"; };
 		BB93CC5D226911E300991A15 /* FirebaseBoolean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseBoolean.swift; sourceTree = "<group>"; };
 		BB93CC60226918F100991A15 /* FirebaseAddData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAddData.swift; sourceTree = "<group>"; };
 		BBA684DA226B98D600FDAD45 /* TableViewCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +197,7 @@
 				BB6839C22267D7CA009ECE4B /* MuziklerViewController.swift */,
 				BB6839C42267D7FD009ECE4B /* SiparislerViewController.swift */,
 				BB6839C62267D832009ECE4B /* MenuYonetimViewController.swift */,
+				BB8956EF22799FAB00C8A04E /* MenuEkleViewController.swift */,
 			);
 			path = proje;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 				BB1A3967226B313A000E5F03 /* FirebaseAddSiparis.swift */,
 				BBEF52D7226B5AD30023E18C /* FirebaseAddTable.swift */,
 				BB185E32226CF0A700CD54CB /* FirebaseAddMusic.swift */,
+				BB8956F12279A39900C8A04E /* FirebaseAddMenu.swift */,
 			);
 			path = FirebaseIslem;
 			sourceTree = "<group>";
@@ -390,6 +396,7 @@
 				BB6839BD2267D69B009ECE4B /* MusteriGirisViewController.swift in Sources */,
 				BBEF52D6226B55930023E18C /* Login.swift in Sources */,
 				BB1A3966226B27F8000E5F03 /* SiparisVer.swift in Sources */,
+				BB8956F022799FAB00C8A04E /* MenuEkleViewController.swift in Sources */,
 				BBE5CF732269CDFD00BA9F5F /* FirebaseData.swift in Sources */,
 				BBE5CF752269CE8000BA9F5F /* GetFirebaseDataInterface.swift in Sources */,
 				BBE5CF7E2269E63400BA9F5F /* MuzikList.swift in Sources */,
@@ -401,6 +408,7 @@
 				BB6839C72267D832009ECE4B /* MenuYonetimViewController.swift in Sources */,
 				BB48B8C922650E37009BE390 /* AppDelegate.swift in Sources */,
 				BBE581992269259F00977399 /* FirebaseAddKullanici.swift in Sources */,
+				BB8956F22279A39900C8A04E /* FirebaseAddMenu.swift in Sources */,
 				BBE5CF84226A03C200BA9F5F /* TableList.swift in Sources */,
 				BBE5CF82226A020700BA9F5F /* TableData.swift in Sources */,
 			);

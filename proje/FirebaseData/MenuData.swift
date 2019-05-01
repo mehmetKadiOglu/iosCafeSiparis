@@ -12,12 +12,12 @@ import FirebaseDatabase
 
 class MenuData: GetFirebaseDataInterface{
     override public func getData(cafeID:String){
-        print("menu giriş")
-        print(cafeID)
+        
         let ref = Database.database().reference()
         var index = -1
+        FirebaseBoolean.MenuDataKontrol = true
         ref.child(cafeID).child("Menu").observeSingleEvent(of: .value, with: { (snapshot) in
-            FirebaseBoolean.MenuDataKontrol = true
+            
             for base in snapshot.children {
                 let baseChild = base as?DataSnapshot
                 let key = baseChild?.key ?? " "
@@ -26,21 +26,24 @@ class MenuData: GetFirebaseDataInterface{
                 
                 for childs in (baseChild?.children)!{
                     
+
+                    
                     let childsData = childs as?DataSnapshot
                     let data = childsData?.value as? NSDictionary
-                    
                     let urun = data?["Urun"] as? String ?? ""
-                    let fiyat = data?["Fiyat"] as? String ?? ""
+                    let fiyat = data?["Fiyat"] as? Double ?? 0.0
                     let key = childsData?.key ?? " "
                     
                     MenuList.getNesne().setMenuIcerik(index: index, menuIcerik: urun )
-                    MenuList.getNesne().setMenuFiyat(index: index, menuFiyat: fiyat)
-                    MenuList.getNesne().setMenuIcerikKey(index: index, menuIcerik: key)
+                    MenuList.getNesne().setMenuFiyat(index: index, menuFiyat: String(fiyat))
+                    MenuList.getNesne().setMenuIcerikKey(index: index, menuKey: key)
                     
                     
                 }
+                
             }
             FirebaseBoolean.MenuDataKontrol = false
+            
         }) { (error) in
             print(error.localizedDescription)
         }

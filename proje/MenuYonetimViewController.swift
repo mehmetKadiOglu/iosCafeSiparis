@@ -36,7 +36,7 @@ class MenuYonetimViewController: UIViewController, UITableViewDataSource, UITabl
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return MenuList.getNesne().getListUzunlugu()
+        return MenuList.getNesne().getListUzunlugu(parentIndex: self.menuGrupIndex)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -60,6 +60,7 @@ class MenuYonetimViewController: UIViewController, UITableViewDataSource, UITabl
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         self.menuGrupIndex = row
+        self.urunlerTableView.reloadData()
     }
     
     
