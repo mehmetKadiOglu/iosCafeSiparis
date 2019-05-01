@@ -18,6 +18,7 @@ class MenuYonetimViewController: UIViewController, UITableViewDataSource, UITabl
     @IBOutlet weak var urunlerTableView: UITableView!
     
     var menuGrupIndex:Int = 0
+    var menuIcerikIndex:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,11 +33,38 @@ class MenuYonetimViewController: UIViewController, UITableViewDataSource, UITabl
     }
     
     @IBAction func fiyatGuncelleClick(_ sender: Any) {
+        
+        let data = self.fiyatDataHazirla()
+        self.alanBosalt()
+        
+        MenuList.getNesne().setMenuGuncelFiyat(parentKey: self.menuGrupIndex, childKey: self.menuIcerikIndex, fiyat: data["fiyat"]!)
+        FirebaseProcess.execute(interface: FirebaseUpdateFiyat(), data: data)
+        
+        self.urunlerTableView.reloadData()
+        
     }
     
+    func fiyatDataHazirla()->[String:String]{
+        var data = [String:String]()
+        data["menuKatagori"] = MenuList.getNesne().getMenuKatagoriEleman(index: self.menuGrupIndex)
+        data["childKey"] = MenuList.getNesne().getMenuIcerikKey(parentIndex: self.menuGrupIndex, childIndex: self.menuIcerikIndex)
+        data["fiyat"] = yeniFiyatText.text!
+        
+        return data
+        
+    }
+    
+    func alanBosalt(){
+        self.yeniFiyatText.text = ""
+        self.secilenUrun.text = ""
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return MenuList.getNesne().getListUzunlugu(parentIndex: self.menuGrupIndex)
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.menuIcerikIndex = indexPath.row
+        self.secilenUrun.text = MenuList.getNesne().getMenuIcerik(parentIndex: self.menuGrupIndex, childIndex: indexPath.row)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -60,6 +88,7 @@ class MenuYonetimViewController: UIViewController, UITableViewDataSource, UITabl
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         self.menuGrupIndex = row
+        self.secilenUrun.text = ""
         self.urunlerTableView.reloadData()
     }
     

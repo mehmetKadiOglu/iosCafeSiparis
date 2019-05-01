@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		29ECE21F9FF57BB7B3896D05 /* Pods_proje.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A7B1B7F064AE27388F095D /* Pods_proje.framework */; };
+		BB035BF4227A3808000961C2 /* FirebaseUpdateFiyat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB035BF3227A3808000961C2 /* FirebaseUpdateFiyat.swift */; };
 		BB0C537C226A4266009EB385 /* YetkisizKullanici.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0C537B226A4266009EB385 /* YetkisizKullanici.swift */; };
 		BB1112A12268C9490053D825 /* MakeToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1112A02268C9490053D825 /* MakeToast.swift */; };
 		BB185E31226CED5900CD54CB /* MuziklerTableViewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB185E30226CED5900CD54CB /* MuziklerTableViewCellViewController.swift */; };
@@ -61,6 +62,7 @@
 		77A7B1B7F064AE27388F095D /* Pods_proje.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_proje.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8559275C58F04BAB2362951D /* Pods-proje.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proje.debug.xcconfig"; path = "Target Support Files/Pods-proje/Pods-proje.debug.xcconfig"; sourceTree = "<group>"; };
 		B2F7017722790865DAF28FCA /* Pods-proje.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proje.release.xcconfig"; path = "Target Support Files/Pods-proje/Pods-proje.release.xcconfig"; sourceTree = "<group>"; };
+		BB035BF3227A3808000961C2 /* FirebaseUpdateFiyat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUpdateFiyat.swift; sourceTree = "<group>"; };
 		BB0C537B226A4266009EB385 /* YetkisizKullanici.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YetkisizKullanici.swift; sourceTree = "<group>"; };
 		BB1112A02268C9490053D825 /* MakeToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeToast.swift; sourceTree = "<group>"; };
 		BB185E30226CED5900CD54CB /* MuziklerTableViewCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuziklerTableViewCellViewController.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				BBEF52D7226B5AD30023E18C /* FirebaseAddTable.swift */,
 				BB185E32226CF0A700CD54CB /* FirebaseAddMusic.swift */,
 				BB8956F12279A39900C8A04E /* FirebaseAddMenu.swift */,
+				BB035BF3227A3808000961C2 /* FirebaseUpdateFiyat.swift */,
 			);
 			path = FirebaseIslem;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				BB1A3968226B313A000E5F03 /* FirebaseAddSiparis.swift in Sources */,
 				BBE5CF7C2269E30800BA9F5F /* TableMusicParentList.swift in Sources */,
 				BBE5CF772269CEF000BA9F5F /* MusicData.swift in Sources */,
+				BB035BF4227A3808000961C2 /* FirebaseUpdateFiyat.swift in Sources */,
 				BBA684DB226B98D600FDAD45 /* TableViewCellViewController.swift in Sources */,
 				BBE5CF86226A165700BA9F5F /* MenuData.swift in Sources */,
 				BB0C537C226A4266009EB385 /* YetkisizKullanici.swift in Sources */,

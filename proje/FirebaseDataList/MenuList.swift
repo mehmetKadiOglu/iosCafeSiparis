@@ -62,6 +62,9 @@ class MenuList {
     public func setMenuFiyat(index:Int, menuFiyat:String){
         self.menuFiyat[index].append(menuFiyat)
     }
+    public func setMenuGuncelFiyat(parentKey:Int, childKey:Int,fiyat:String){
+        self.menuFiyat[parentKey][childKey] = fiyat
+    }
     public func getMenuFiyat(parentIndex:Int, childIndex:Int)->String{
         return self.menuFiyat[parentIndex][childIndex]
         
