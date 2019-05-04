@@ -18,7 +18,7 @@ class MusteriHesapViewController: UIViewController, UITableViewDataSource, UITab
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
-        toplamMiktarLabel.text = self.toplamUcretHesapla()
+        toplamMiktarLabel.text = "Toplam Tutar = " + self.toplamUcretHesapla()
         
         
         // Do any additional setup after loading the view.
