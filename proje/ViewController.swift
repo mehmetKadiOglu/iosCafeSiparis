@@ -21,60 +21,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         Toast.sayfa = self
-        //self.ref = Database.database().reference()
-        
-       /* ref.child("Deneme").observe(.childAdded, with: { (snapshot) in
-            print(snapshot.hasChild("aa1"))
-            let value = snapshot.value as? NSDictionary
-            print(snapshot.key)
-            for child in snapshot.children{
-                let childim = child as?DataSnapshot
-                let valueee = childim?.value as? NSDictionary
-                print(childim?.key ?? "assa")
-                let username = valueee?["ad"] as? String ?? ""
-                print(username)
-            }
-            
-        }) { (error) in
-            print(error.localizedDescription)
-        }*/
-        
-        //ref.childByAutoId().setValue(["neVar":"banabak"])
-        /*ref.child("Deneme").observeSingleEvent(of: .value, with: { (snapshot) in
-            for child in snapshot.children {
-
-                let childim = child as?DataSnapshot
-                print(childim?.key ?? "asasa")
-                print("----Child2 Giriş")
-                
-                for child2 in (childim?.children)!{
-                    
-                    let childim2 = child2 as?DataSnapshot
-                    let valueee2 = childim2?.value as? NSDictionary
-                    print(childim2?.key ?? "assa")
-                    let username2 = valueee2?["ad"] as? String ?? ""
-                    print(username2)
-                    
-                    
-                }
-                print("-------")
-               // let valueee = childim?.value as? NSDictionary
-                //print(valueee)
-               // print(childim?.key ?? "assa")
-                //let username = valueee?["adi"] as? String ?? ""
-               // print(username)
-            }
-            print("------------")
-           /* let value = snapshot.value as? NSDictionary
-            let username = value?["adi"] as? String ?? ""
-            print(username)*/
-            print(snapshot.key)
-            // ...
-        }) { (error) in
-            print(error.localizedDescription)
-            }
-        print("hirrrim")*/
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {

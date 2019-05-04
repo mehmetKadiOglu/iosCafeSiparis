@@ -10,6 +10,11 @@
 		29ECE21F9FF57BB7B3896D05 /* Pods_proje.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A7B1B7F064AE27388F095D /* Pods_proje.framework */; };
 		BB035BF4227A3808000961C2 /* FirebaseUpdateFiyat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB035BF3227A3808000961C2 /* FirebaseUpdateFiyat.swift */; };
 		BB0C537C226A4266009EB385 /* YetkisizKullanici.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0C537B226A4266009EB385 /* YetkisizKullanici.swift */; };
+		BB0D3475227AFE7000CC6675 /* MusteriLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D3474227AFE7000CC6675 /* MusteriLogin.swift */; };
+		BB0D3477227B063A00CC6675 /* MusteriSayfaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D3476227B063A00CC6675 /* MusteriSayfaViewController.swift */; };
+		BB0D3479227B091F00CC6675 /* MusteriHesapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D3478227B091F00CC6675 /* MusteriHesapViewController.swift */; };
+		BB0D347B227B094200CC6675 /* MusteriMuzikViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D347A227B094200CC6675 /* MusteriMuzikViewController.swift */; };
+		BB0D347D227B095A00CC6675 /* MusteriSiparisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D347C227B095A00CC6675 /* MusteriSiparisViewController.swift */; };
 		BB1112A12268C9490053D825 /* MakeToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1112A02268C9490053D825 /* MakeToast.swift */; };
 		BB185E31226CED5900CD54CB /* MuziklerTableViewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB185E30226CED5900CD54CB /* MuziklerTableViewCellViewController.swift */; };
 		BB185E33226CF0A700CD54CB /* FirebaseAddMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB185E32226CF0A700CD54CB /* FirebaseAddMusic.swift */; };
@@ -36,6 +41,7 @@
 		BB6839C72267D832009ECE4B /* MenuYonetimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6839C62267D832009ECE4B /* MenuYonetimViewController.swift */; };
 		BB8956F022799FAB00C8A04E /* MenuEkleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8956EF22799FAB00C8A04E /* MenuEkleViewController.swift */; };
 		BB8956F22279A39900C8A04E /* FirebaseAddMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8956F12279A39900C8A04E /* FirebaseAddMenu.swift */; };
+		BB897685227DB3780008E3DE /* HesapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB897684227DB3780008E3DE /* HesapTableViewCell.swift */; };
 		BB93CC5E226911E300991A15 /* FirebaseBoolean.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93CC5D226911E300991A15 /* FirebaseBoolean.swift */; };
 		BB93CC61226918F100991A15 /* FirebaseAddData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB93CC60226918F100991A15 /* FirebaseAddData.swift */; };
 		BBA684DB226B98D600FDAD45 /* TableViewCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA684DA226B98D600FDAD45 /* TableViewCellViewController.swift */; };
@@ -64,6 +70,11 @@
 		B2F7017722790865DAF28FCA /* Pods-proje.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proje.release.xcconfig"; path = "Target Support Files/Pods-proje/Pods-proje.release.xcconfig"; sourceTree = "<group>"; };
 		BB035BF3227A3808000961C2 /* FirebaseUpdateFiyat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUpdateFiyat.swift; sourceTree = "<group>"; };
 		BB0C537B226A4266009EB385 /* YetkisizKullanici.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YetkisizKullanici.swift; sourceTree = "<group>"; };
+		BB0D3474227AFE7000CC6675 /* MusteriLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusteriLogin.swift; sourceTree = "<group>"; };
+		BB0D3476227B063A00CC6675 /* MusteriSayfaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusteriSayfaViewController.swift; sourceTree = "<group>"; };
+		BB0D3478227B091F00CC6675 /* MusteriHesapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusteriHesapViewController.swift; sourceTree = "<group>"; };
+		BB0D347A227B094200CC6675 /* MusteriMuzikViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusteriMuzikViewController.swift; sourceTree = "<group>"; };
+		BB0D347C227B095A00CC6675 /* MusteriSiparisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusteriSiparisViewController.swift; sourceTree = "<group>"; };
 		BB1112A02268C9490053D825 /* MakeToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeToast.swift; sourceTree = "<group>"; };
 		BB185E30226CED5900CD54CB /* MuziklerTableViewCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuziklerTableViewCellViewController.swift; sourceTree = "<group>"; };
 		BB185E32226CF0A700CD54CB /* FirebaseAddMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAddMusic.swift; sourceTree = "<group>"; };
@@ -92,6 +103,7 @@
 		BB6839C62267D832009ECE4B /* MenuYonetimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuYonetimViewController.swift; sourceTree = "<group>"; };
 		BB8956EF22799FAB00C8A04E /* MenuEkleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuEkleViewController.swift; sourceTree = "<group>"; };
 		BB8956F12279A39900C8A04E /* FirebaseAddMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAddMenu.swift; sourceTree = "<group>"; };
+		BB897684227DB3780008E3DE /* HesapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HesapTableViewCell.swift; sourceTree = "<group>"; };
 		BB93CC5D226911E300991A15 /* FirebaseBoolean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseBoolean.swift; sourceTree = "<group>"; };
 		BB93CC60226918F100991A15 /* FirebaseAddData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAddData.swift; sourceTree = "<group>"; };
 		BBA684DA226B98D600FDAD45 /* TableViewCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +166,7 @@
 				BB185E30226CED5900CD54CB /* MuziklerTableViewCellViewController.swift */,
 				BB185E34226CF3F900CD54CB /* GlobalNesne.swift */,
 				BB66CA7E2271C6CA002A2577 /* MenuTableCellViewController.swift */,
+				BB897684227DB3780008E3DE /* HesapTableViewCell.swift */,
 			);
 			path = Ekler;
 			sourceTree = "<group>";
@@ -200,6 +213,10 @@
 				BB6839C42267D7FD009ECE4B /* SiparislerViewController.swift */,
 				BB6839C62267D832009ECE4B /* MenuYonetimViewController.swift */,
 				BB8956EF22799FAB00C8A04E /* MenuEkleViewController.swift */,
+				BB0D3476227B063A00CC6675 /* MusteriSayfaViewController.swift */,
+				BB0D3478227B091F00CC6675 /* MusteriHesapViewController.swift */,
+				BB0D347A227B094200CC6675 /* MusteriMuzikViewController.swift */,
+				BB0D347C227B095A00CC6675 /* MusteriSiparisViewController.swift */,
 			);
 			path = proje;
 			sourceTree = "<group>";
@@ -261,6 +278,7 @@
 				BBEF52CC226B48770023E18C /* AdminLogin.swift */,
 				BBEF52CE226B488F0023E18C /* LoginInterface.swift */,
 				BBEF52D5226B55930023E18C /* Login.swift */,
+				BB0D3474227AFE7000CC6675 /* MusteriLogin.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -372,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB185E33226CF0A700CD54CB /* FirebaseAddMusic.swift in Sources */,
+				BB0D3479227B091F00CC6675 /* MusteriHesapViewController.swift in Sources */,
 				BB1A3964226B1E3D000E5F03 /* HesapData.swift in Sources */,
 				BB1A3968226B313A000E5F03 /* FirebaseAddSiparis.swift in Sources */,
 				BBE5CF7C2269E30800BA9F5F /* TableMusicParentList.swift in Sources */,
@@ -392,6 +411,7 @@
 				BBEF52D8226B5AD30023E18C /* FirebaseAddTable.swift in Sources */,
 				BBEF52CF226B488F0023E18C /* LoginInterface.swift in Sources */,
 				BBEF52CA226B47D10023E18C /* Admin.swift in Sources */,
+				BB0D347B227B094200CC6675 /* MusteriMuzikViewController.swift in Sources */,
 				BB66CA7F2271C6CA002A2577 /* MenuTableCellViewController.swift in Sources */,
 				BBEF52CD226B48770023E18C /* AdminLogin.swift in Sources */,
 				BB1A3962226B1D92000E5F03 /* Musteri.swift in Sources */,
@@ -399,6 +419,8 @@
 				BB93CC5E226911E300991A15 /* FirebaseBoolean.swift in Sources */,
 				BB6839BD2267D69B009ECE4B /* MusteriGirisViewController.swift in Sources */,
 				BBEF52D6226B55930023E18C /* Login.swift in Sources */,
+				BB0D3475227AFE7000CC6675 /* MusteriLogin.swift in Sources */,
+				BB897685227DB3780008E3DE /* HesapTableViewCell.swift in Sources */,
 				BB1A3966226B27F8000E5F03 /* SiparisVer.swift in Sources */,
 				BB8956F022799FAB00C8A04E /* MenuEkleViewController.swift in Sources */,
 				BBE5CF732269CDFD00BA9F5F /* FirebaseData.swift in Sources */,
@@ -406,6 +428,7 @@
 				BBE5CF7E2269E63400BA9F5F /* MuzikList.swift in Sources */,
 				BB1112A12268C9490053D825 /* MakeToast.swift in Sources */,
 				BB2B86252268C1F500D05E37 /* RoundButton.swift in Sources */,
+				BB0D3477227B063A00CC6675 /* MusteriSayfaViewController.swift in Sources */,
 				BB6839C52267D7FD009ECE4B /* SiparislerViewController.swift in Sources */,
 				BB185E31226CED5900CD54CB /* MuziklerTableViewCellViewController.swift in Sources */,
 				BBE5CF88226A170100BA9F5F /* MenuList.swift in Sources */,
@@ -413,6 +436,7 @@
 				BB48B8C922650E37009BE390 /* AppDelegate.swift in Sources */,
 				BBE581992269259F00977399 /* FirebaseAddKullanici.swift in Sources */,
 				BB8956F22279A39900C8A04E /* FirebaseAddMenu.swift in Sources */,
+				BB0D347D227B095A00CC6675 /* MusteriSiparisViewController.swift in Sources */,
 				BBE5CF84226A03C200BA9F5F /* TableList.swift in Sources */,
 				BBE5CF82226A020700BA9F5F /* TableData.swift in Sources */,
 			);

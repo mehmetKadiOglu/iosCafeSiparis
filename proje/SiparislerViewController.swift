@@ -11,6 +11,9 @@ import UIKit
 
 class SiparislerViewController: UIViewController{
     
+    
+    @IBOutlet weak var menuIcerikView: UITableView!
+    @IBOutlet weak var menuGrup: UIPickerView!
     override func viewDidLoad() {
         super.viewDidLoad()
     }

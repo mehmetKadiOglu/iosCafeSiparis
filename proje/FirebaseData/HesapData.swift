@@ -13,20 +13,20 @@ class HesapData:GetFirebaseDataInterface{
     override public func getData(cafeID:String){
         
         let ref = Database.database().reference()
-        
-        ref.child(cafeID).child("siparisler").queryEqual(toValue: Musteri.getNesne().getTableId(), childKey: "masaId").observeSingleEvent(of: .value, with: { (snapshot) in
+
+        ref.child(cafeID).child("siparisler").queryOrdered(byChild:"masaId").queryEqual(toValue: Musteri.getNesne().getTableId()).observeSingleEvent(of: .value, with: { (snapshot) in
             for child in snapshot.children {
                 
                 let childData = child as?DataSnapshot
                 let data = childData?.value as! NSDictionary
                 
                 let siparis = data["siparis"] as! String
-                let fiyat = data["fiyat"] as! Double
-                let adet = data["adet"] as! Int
+                let fiyat = data["fiyat"] as! String
+                let adet = data["adet"] as! String
                 
                 Musteri.getNesne().setSiparisler(siparis: siparis)
                 Musteri.getNesne().setAdetler(adet: adet)
-                Musteri.getNesne().setfiyatlar(fiyat: fiyat)
+                Musteri.getNesne().setFiyatlar(fiyat: fiyat)
             }
             
         }) { (error) in

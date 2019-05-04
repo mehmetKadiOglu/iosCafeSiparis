@@ -11,8 +11,8 @@ import Foundation
 class YetkisizKullanici: Kullanici{
     
     private var siparisler = [String]()
-    private var adetler = [Int]()
-    private var fiyatlar = [Double]()
+    private var adetler = [String]()
+    private var fiyatlar = [String]()
     private var oyTarihi:String = ""
     private var tableId:String = ""
     //private var siparisNesne = SiparisVer()
@@ -34,22 +34,27 @@ class YetkisizKullanici: Kullanici{
     public func setSiparisler(siparis:String){
         self.siparisler.append(siparis)
     }
-    public func getSiparisler()->[String]{
-        return self.siparisler
+    public func getSiparisler(index:Int)->String{
+        return self.siparisler[index]
     }
     
-    public func setAdetler(adet:Int){
+    public func setAdetler(adet:String){
         self.adetler.append(adet)
     }
-    public func getAdetler()->[Int]{
-        return self.adetler
+    public func getAdetler(index:Int)->String{
+        return self.adetler[index]
     }
     
-    public func setfiyatlar(fiyat:Double){
+    public func setFiyatlar(fiyat:String){
         self.fiyatlar.append(fiyat)
     }
-    public func getSiparisler()->[Double]{
-        return self.fiyatlar
+    public func getFiyatlar(index:Int)->String{
+        return self.fiyatlar[index]
+    }
+    
+    public func getListLength()->Int{
+        
+        return self.fiyatlar.count
     }
     
     override public func createList(){
