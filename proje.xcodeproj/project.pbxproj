@@ -10,6 +10,8 @@
 		29ECE21F9FF57BB7B3896D05 /* Pods_proje.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A7B1B7F064AE27388F095D /* Pods_proje.framework */; };
 		BB035BF4227A3808000961C2 /* FirebaseUpdateFiyat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB035BF3227A3808000961C2 /* FirebaseUpdateFiyat.swift */; };
 		BB0C537C226A4266009EB385 /* YetkisizKullanici.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0C537B226A4266009EB385 /* YetkisizKullanici.swift */; };
+		BB0CFA1E2284C3910000D963 /* FirebaseAddVote.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0CFA1D2284C3910000D963 /* FirebaseAddVote.swift */; };
+		BB0CFA202284C4C80000D963 /* FirebaseMasaOySaatGuncelle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0CFA1F2284C4C80000D963 /* FirebaseMasaOySaatGuncelle.swift */; };
 		BB0D3475227AFE7000CC6675 /* MusteriLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D3474227AFE7000CC6675 /* MusteriLogin.swift */; };
 		BB0D3477227B063A00CC6675 /* MusteriSayfaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D3476227B063A00CC6675 /* MusteriSayfaViewController.swift */; };
 		BB0D3479227B091F00CC6675 /* MusteriHesapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0D3478227B091F00CC6675 /* MusteriHesapViewController.swift */; };
@@ -32,6 +34,7 @@
 		BB48B8D622650E38009BE390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB48B8D422650E38009BE390 /* LaunchScreen.storyboard */; };
 		BB48B8DE22650EA2009BE390 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB48B8DD22650EA2009BE390 /* GoogleService-Info.plist */; };
 		BB5379B42269CA3A00D5585F /* Kullanici.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5379B32269CA3A00D5585F /* Kullanici.swift */; };
+		BB627C41228441D300DA7A75 /* SistemSaati.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB627C40228441D300DA7A75 /* SistemSaati.swift */; };
 		BB66CA7F2271C6CA002A2577 /* MenuTableCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB66CA7E2271C6CA002A2577 /* MenuTableCellViewController.swift */; };
 		BB6839BD2267D69B009ECE4B /* MusteriGirisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6839BC2267D69B009ECE4B /* MusteriGirisViewController.swift */; };
 		BB6839BF2267D736009ECE4B /* AdminCafeYonetimViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6839BE2267D736009ECE4B /* AdminCafeYonetimViewController.swift */; };
@@ -70,6 +73,8 @@
 		B2F7017722790865DAF28FCA /* Pods-proje.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proje.release.xcconfig"; path = "Target Support Files/Pods-proje/Pods-proje.release.xcconfig"; sourceTree = "<group>"; };
 		BB035BF3227A3808000961C2 /* FirebaseUpdateFiyat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUpdateFiyat.swift; sourceTree = "<group>"; };
 		BB0C537B226A4266009EB385 /* YetkisizKullanici.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YetkisizKullanici.swift; sourceTree = "<group>"; };
+		BB0CFA1D2284C3910000D963 /* FirebaseAddVote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAddVote.swift; sourceTree = "<group>"; };
+		BB0CFA1F2284C4C80000D963 /* FirebaseMasaOySaatGuncelle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMasaOySaatGuncelle.swift; sourceTree = "<group>"; };
 		BB0D3474227AFE7000CC6675 /* MusteriLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusteriLogin.swift; sourceTree = "<group>"; };
 		BB0D3476227B063A00CC6675 /* MusteriSayfaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusteriSayfaViewController.swift; sourceTree = "<group>"; };
 		BB0D3478227B091F00CC6675 /* MusteriHesapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusteriHesapViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +99,7 @@
 		BB48B8D722650E38009BE390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB48B8DD22650EA2009BE390 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BB5379B32269CA3A00D5585F /* Kullanici.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kullanici.swift; sourceTree = "<group>"; };
+		BB627C40228441D300DA7A75 /* SistemSaati.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SistemSaati.swift; sourceTree = "<group>"; };
 		BB66CA7E2271C6CA002A2577 /* MenuTableCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableCellViewController.swift; sourceTree = "<group>"; };
 		BB6839BC2267D69B009ECE4B /* MusteriGirisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusteriGirisViewController.swift; sourceTree = "<group>"; };
 		BB6839BE2267D736009ECE4B /* AdminCafeYonetimViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminCafeYonetimViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +173,7 @@
 				BB185E34226CF3F900CD54CB /* GlobalNesne.swift */,
 				BB66CA7E2271C6CA002A2577 /* MenuTableCellViewController.swift */,
 				BB897684227DB3780008E3DE /* HesapTableViewCell.swift */,
+				BB627C40228441D300DA7A75 /* SistemSaati.swift */,
 			);
 			path = Ekler;
 			sourceTree = "<group>";
@@ -244,6 +251,8 @@
 				BB185E32226CF0A700CD54CB /* FirebaseAddMusic.swift */,
 				BB8956F12279A39900C8A04E /* FirebaseAddMenu.swift */,
 				BB035BF3227A3808000961C2 /* FirebaseUpdateFiyat.swift */,
+				BB0CFA1D2284C3910000D963 /* FirebaseAddVote.swift */,
+				BB0CFA1F2284C4C80000D963 /* FirebaseMasaOySaatGuncelle.swift */,
 			);
 			path = FirebaseIslem;
 			sourceTree = "<group>";
@@ -393,6 +402,7 @@
 				BB0D3479227B091F00CC6675 /* MusteriHesapViewController.swift in Sources */,
 				BB1A3964226B1E3D000E5F03 /* HesapData.swift in Sources */,
 				BB1A3968226B313A000E5F03 /* FirebaseAddSiparis.swift in Sources */,
+				BB0CFA1E2284C3910000D963 /* FirebaseAddVote.swift in Sources */,
 				BBE5CF7C2269E30800BA9F5F /* TableMusicParentList.swift in Sources */,
 				BBE5CF772269CEF000BA9F5F /* MusicData.swift in Sources */,
 				BB035BF4227A3808000961C2 /* FirebaseUpdateFiyat.swift in Sources */,
@@ -432,12 +442,14 @@
 				BB6839C52267D7FD009ECE4B /* SiparislerViewController.swift in Sources */,
 				BB185E31226CED5900CD54CB /* MuziklerTableViewCellViewController.swift in Sources */,
 				BBE5CF88226A170100BA9F5F /* MenuList.swift in Sources */,
+				BB0CFA202284C4C80000D963 /* FirebaseMasaOySaatGuncelle.swift in Sources */,
 				BB6839C72267D832009ECE4B /* MenuYonetimViewController.swift in Sources */,
 				BB48B8C922650E37009BE390 /* AppDelegate.swift in Sources */,
 				BBE581992269259F00977399 /* FirebaseAddKullanici.swift in Sources */,
 				BB8956F22279A39900C8A04E /* FirebaseAddMenu.swift in Sources */,
 				BB0D347D227B095A00CC6675 /* MusteriSiparisViewController.swift in Sources */,
 				BBE5CF84226A03C200BA9F5F /* TableList.swift in Sources */,
+				BB627C41228441D300DA7A75 /* SistemSaati.swift in Sources */,
 				BBE5CF82226A020700BA9F5F /* TableData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

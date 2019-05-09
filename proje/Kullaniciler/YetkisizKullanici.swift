@@ -15,7 +15,6 @@ class YetkisizKullanici: Kullanici{
     private var fiyatlar = [String]()
     private var oyTarihi:String = ""
     private var tableId:String = ""
-    //private var siparisNesne = SiparisVer()
     
     public func setTableId(tableId:String){
         self.tableId = tableId

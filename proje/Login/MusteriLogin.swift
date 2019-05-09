@@ -27,9 +27,11 @@ class MusteriLogin: LoginInterface{
                 let childsData = child as?DataSnapshot
                 
                 if (childsData?.key == data["masaId"]){
+                    let masaData = childsData?.value as? NSDictionary
                     
                     Musteri.getNesne().setCafeId(CafeId: data["cafeID"]!)
                     Musteri.getNesne().setTableId(tableId: data["masaId"]!)
+                    Musteri.getNesne().setOyTarihi(oyTarihi: masaData!["voteTime"]! as! String)
                     Musteri.getNesne().createList()
                     SVProgressHUD.show(withStatus: "Veriler Cekiliyor")
                     FirebaseBoolean.LoginBasariKontrol = true

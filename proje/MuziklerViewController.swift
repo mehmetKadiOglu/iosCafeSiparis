@@ -59,12 +59,8 @@ class MuziklerViewController: UIViewController, UITableViewDataSource, UITableVi
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "muzikCell", for: indexPath) as! MuziklerTableViewCellViewController
         cell.muzikAdi.text = MuzikList.getNesne().getMuzikAdi(index: indexPath.row)
-        //cell.satirLabel.text = masalarimm[indexPath.row]
-        return cell/*
-         let cell = UITableViewCell()
-         //cell.textLabel?.text = String(TableList.getNesne().getMasaNoList(index: indexPath.row))
-         cell.textLabel?.text = masalarimm[indexPath.row]
-         return cell*/
+        return cell
+
     }
 
     
