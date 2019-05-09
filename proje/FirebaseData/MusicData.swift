@@ -37,6 +37,10 @@ class MusicData: GetFirebaseDataInterface {
             let muzikAdi = value?["musicName"] as? String ?? ""
             MuzikList.getNesne().muzikListesiGuncelle(muzikAdi: muzikAdi)
             
+            if(GlobalNesne.musteriMuzikViewNesne != nil){
+                GlobalNesne.musteriMuzikViewNesne?.muzikTableView.reloadData()
+            }
+            
         }) { (error) in
             print(error.localizedDescription)
         }

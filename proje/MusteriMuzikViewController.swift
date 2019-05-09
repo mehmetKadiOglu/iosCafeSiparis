@@ -12,10 +12,12 @@ class MusteriMuzikViewController: UIViewController,  UITableViewDataSource, UITa
 
     @IBOutlet weak var muzikLabel: UILabel!
     @IBOutlet weak var muzikTableView: UITableView!
+    var secilenMuzikIndex:Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         self.muzikTableView.delegate = self
         self.muzikTableView.dataSource = self
+        GlobalNesne.musteriMuzikViewNesne = self
         // Do any additional setup after loading the view.
     }
 
@@ -24,21 +26,36 @@ class MusteriMuzikViewController: UIViewController,  UITableViewDataSource, UITa
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func geriGel(_ sender: Any) {
+        GlobalNesne.musteriMuzikViewNesne = nil
+        dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func oyVerClick(_ sender: Any) {
         
-
-        var guncelSaat =  SistemSaati.getSaat().components(separatedBy: ":")
+        
+        let guncelSaat =  SistemSaati.getSaat()
+        var guncelSaatSplit = guncelSaat.components(separatedBy: ":")
         var musteriSaat = Musteri.getNesne().getOyTarihi().components(separatedBy: ":")
         
-        var fark = Int(guncelSaat[0])! - Int(musteriSaat[0])!
+        var fark = Int(guncelSaatSplit[0])! - Int(musteriSaat[0])!
         
-        fark = (fark * 60) + (Int(guncelSaat[1])! - Int(musteriSaat[1])!)
+        fark = (fark * 60) + (Int(guncelSaatSplit[1])! - Int(musteriSaat[1])!)
         
         if (fark >= 15){
-            print(guncelSaat[0] + ":" + guncelSaat[1])
+            FirebaseProcess.execute(interface: FirebaseAddVote(), data: self.dataHazirla())
+            Musteri.getNesne().setOyTarihi(oyTarihi: guncelSaat)
+            FirebaseProcess.execute(interface: FirebaseMasaOySaatGuncelle(), data: <#T##[String : String]#>)
+            
         }
         
+    }
+    
+    private func dataHazirla()->[String:String]{
+        var data = [String:String]()
+        data["muzikKey"] = MuzikList.getNesne().getAnahtar(index: self.secilenMuzikIndex)
+        data["oy"] = String(MuzikList.getNesne().getMuzikOylari(index: self.secilenMuzikIndex) + 1)
+        return data
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return MuzikList.getNesne().getMuzikAdi().count
@@ -51,6 +68,10 @@ class MusteriMuzikViewController: UIViewController,  UITableViewDataSource, UITa
         cell.muzikAdi.text = MuzikList.getNesne().getMuzikAdi(index: indexPath.row)
         return cell
         
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.muzikLabel.text = MuzikList.getNesne().getMuzikAdi(index: indexPath.row)
+        self.secilenMuzikIndex = indexPath.row
     }
 
     /*

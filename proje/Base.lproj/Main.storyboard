@@ -818,6 +818,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="geriGel:" destination="qrL-kk-dUF" eventType="touchUpInside" id="P0u-zR-kpI"/>
                                     <segue destination="xyd-RJ-cNI" kind="show" id="Mua-z8-PhX"/>
                                 </connections>
                             </button>

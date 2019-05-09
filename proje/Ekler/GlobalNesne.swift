@@ -9,4 +9,5 @@
 import Foundation
 class GlobalNesne{
     public static var muzikViewNesne:MuziklerViewController?
+    public static var musteriMuzikViewNesne:MusteriMuzikViewController?
 }

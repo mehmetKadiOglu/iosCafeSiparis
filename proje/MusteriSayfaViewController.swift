@@ -12,7 +12,6 @@ class MusteriSayfaViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(MuzikList.getNesne().getMuzikAdi())
         // Do any additional setup after loading the view.
     }
 
