@@ -15,9 +15,12 @@ class MusteriMuzikViewController: UIViewController,  UITableViewDataSource, UITa
     var secilenMuzikIndex:Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        MuzikList.getNesne().diziTersCevir()
         self.muzikTableView.delegate = self
         self.muzikTableView.dataSource = self
         GlobalNesne.musteriMuzikViewNesne = self
+        
+        Toast.sayfa = self
         // Do any additional setup after loading the view.
     }
 
@@ -45,8 +48,12 @@ class MusteriMuzikViewController: UIViewController,  UITableViewDataSource, UITa
         if (fark >= 15){
             FirebaseProcess.execute(interface: FirebaseAddVote(), data: self.dataHazirla())
             Musteri.getNesne().setOyTarihi(oyTarihi: guncelSaat)
-            FirebaseProcess.execute(interface: FirebaseMasaOySaatGuncelle(), data: <#T##[String : String]#>)
+            FirebaseProcess.execute(interface: FirebaseMasaOySaatGuncelle(), data: ["oySaati" : guncelSaat])
             
+        }
+        else{
+            
+            Toast.make(mesaj: (String(15 - fark)) + " Dakka Sonra Oy Kullanabilirsiniz")
         }
         
     }

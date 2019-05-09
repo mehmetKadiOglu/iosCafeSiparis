@@ -38,6 +38,12 @@ class MusteriHesapViewController: UIViewController, UITableViewDataSource, UITab
         
         return String(toplamUcret)
     }
+    
+    
+    @IBAction func geriGelClick(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Musteri.getNesne().getListLength()
     }

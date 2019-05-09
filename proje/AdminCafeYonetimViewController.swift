@@ -14,10 +14,6 @@ class AdminCafeYonetimViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        print(MenuList.getNesne().getMenuIcerikKey())
-        print(MenuList.getNesne().getMenuIcerik())
-        
     }
     
     override func didReceiveMemoryWarning() {
