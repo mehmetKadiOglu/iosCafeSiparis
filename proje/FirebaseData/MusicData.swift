@@ -13,7 +13,7 @@ class MusicData: GetFirebaseDataInterface {
     
     override public func getData(cafeID:String){
         let ref = Database.database().reference()
-        ref.child(cafeID).child("musics").queryOrdered(byChild: "oySayisi").observe(.childAdded, with: { (snapshot) in
+        ref.child(cafeID).child("musics").queryOrdered(byChild: "vote").observe(.childAdded, with: { (snapshot) in
 
             let value = snapshot.value as? NSDictionary
             let muzikAdi = value?["musicName"] as? String ?? ""

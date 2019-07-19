@@ -15,6 +15,7 @@ class MusteriMuzikViewController: UIViewController,  UITableViewDataSource, UITa
     var secilenMuzikIndex:Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         MuzikList.getNesne().diziTersCevir()
         self.muzikTableView.delegate = self
         self.muzikTableView.dataSource = self
@@ -49,7 +50,7 @@ class MusteriMuzikViewController: UIViewController,  UITableViewDataSource, UITa
             FirebaseProcess.execute(interface: FirebaseAddVote(), data: self.dataHazirla())
             Musteri.getNesne().setOyTarihi(oyTarihi: guncelSaat)
             FirebaseProcess.execute(interface: FirebaseMasaOySaatGuncelle(), data: ["oySaati" : guncelSaat])
-            
+            Toast.make(mesaj: "Oy Kullanımınız Başarılı")
         }
         else{
             

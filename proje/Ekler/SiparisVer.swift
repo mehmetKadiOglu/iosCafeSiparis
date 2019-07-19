@@ -9,20 +9,28 @@
 import Foundation
 
 class SiparisVer{
-    public func siparisHazirla(data:[String:String]){
+    public func siparisHazirla(data:[String:String])->Bool{
         
-        
-        if (data["siparis"]!.count)  > 4  && (data["adet"]!.count) > 0 {
-            
-            print("ifinn içindeeee")
-            var siparisData = [String:String]()
-            siparisData = data
-            siparisData["saat"] = SistemSaati.getSaat()
-            
-            self.siparisEkle(data: siparisData)
-            
+        var kontrol:Bool = false
+        if (data["siparis"]!.count)  > 1 {
+            if (data["adet"]!.count) > 0{
+                var siparisData = [String:String]()
+                siparisData = data
+                siparisData["saat"] = SistemSaati.getSaat()
+                
+                self.siparisEkle(data: siparisData)
+                kontrol = true
+            }
+            else{
+                Toast.make(mesaj: "Lütfen Adet Giriniz" )
+            }
         }
-
+        else{
+            Toast.make(mesaj: "Lütfen Menu Seçimi Yapınız" )
+        }
+        
+        
+        return kontrol
         
     }
     

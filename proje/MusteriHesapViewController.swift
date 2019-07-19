@@ -31,11 +31,12 @@ class MusteriHesapViewController: UIViewController, UITableViewDataSource, UITab
     
     func toplamUcretHesapla()->String{
         var toplamUcret:Double = 0.0;
-        for index in 0...Musteri.getNesne().getListLength()-1{
-            
-            toplamUcret = toplamUcret + ( Double(Musteri.getNesne().getAdetler(index: index))! * Double(Musteri.getNesne().getFiyatlar(index: index))! )
+        if Musteri.getNesne().getListLength() > 0 {
+            for index in 0...Musteri.getNesne().getListLength()-1{
+                
+                toplamUcret = toplamUcret + ( Double(Musteri.getNesne().getAdetler(index: index))! * Double(Musteri.getNesne().getFiyatlar(index: index))! )
+            }
         }
-        
         return String(toplamUcret)
     }
     

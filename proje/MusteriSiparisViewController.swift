@@ -23,6 +23,7 @@ class MusteriSiparisViewController: UIViewController, UITableViewDataSource, UIT
         self.menuIcerikView.dataSource = self
         self.menuGrupView.delegate = self
         self.menuGrupView.dataSource = self
+        Toast.sayfa = self
         // Do any additional setup after loading the view.
     }
 
@@ -37,9 +38,11 @@ class MusteriSiparisViewController: UIViewController, UITableViewDataSource, UIT
     
     @IBAction func siparisVerClick(_ sender: Any) {
         
-        print("Siparisss Verdeee")
         let nesne = SiparisVer()
-        nesne.siparisHazirla(data: self.siparisDataHazirla())
+        if( nesne.siparisHazirla(data: self.siparisDataHazirla()) ){
+            self.textBoasalt()
+            Toast.make(mesaj: "Bizi Terçih Ettiğiniz İçin Teşekkürler")
+        }
         
     }
     func siparisDataHazirla()->[String:String]{
@@ -51,7 +54,10 @@ class MusteriSiparisViewController: UIViewController, UITableViewDataSource, UIT
         return data
         
     }
-    
+    func textBoasalt(){
+        self.secilenUrun.text = ""
+        self.siparisAdet.text = ""
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return MenuList.getNesne().getListUzunlugu(parentIndex: self.menuGrupIndex)
@@ -83,7 +89,7 @@ class MusteriSiparisViewController: UIViewController, UITableViewDataSource, UIT
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         self.menuGrupIndex = row
-        self.secilenUrun.text = ""
+        self.textBoasalt()
         self.menuIcerikView.reloadData()
     }
 
